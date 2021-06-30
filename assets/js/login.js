@@ -1,3 +1,9 @@
+/*
+ * @ Author: Mr.zhou
+ * @Date: 2021-06-03 16:02:35
+ * @LastEditTime: 2021-06-30 08:26:03
+ * @FilePath: \qianduan\大事件项目\assets\js\login.js
+ */
 $(function() {
     //点击去注册账号的连接
     $('#link_reg').on('click', function() {
@@ -65,7 +71,7 @@ $(function() {
                     // 将登录成功得到的 token 字符串，保存到 localStorage 中
                 localStorage.setItem('token', res.token)
                     // 跳转到后台主页
-                location.href = '/大事件项目/index.html'
+                location.href = './index.html'
             }
         })
     })

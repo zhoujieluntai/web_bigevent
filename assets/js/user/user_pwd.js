@@ -1,7 +1,13 @@
+/*
+ * @ Author: Mr.zhou
+ * @Date: 2021-06-03 18:23:07
+ * @LastEditTime: 2021-06-29 23:35:38
+ * @FilePath: \qianduan\大事件项目\assets\js\user\user_pwd.js
+ */
 $(function() {
     var form = layui.form
 
-    form.varify({
+    form.verify({
         pwd: [/^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格'],
         samePwd: function(value) {
             if (value === $('[name=oldPwd]').val()) {
